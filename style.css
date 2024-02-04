@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cover_img{
+    object-fit:cover;        
+}
+#logo{
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    width: 116px;
+    height: 76px;
+}
+.logo_name{
+    position: absolute;
+    left: 115px;
+    color: white;
+    top: 27px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.nav_bar{
+    position: absolute;
+    left: 600px;
+    top: 33px;
+    color: white;
+}
+.nav_bar ul{
+    list-style: none;
+}
+.nav_bar ul li{
+    display: inline;
+    padding: 25px;
+    font-size: 19px;
+}
+.nav_bar ul li:hover{
+    text-decoration: underline 2px white;
+    transform: scaleX(0);
+    transition: transform 3s ease-out ;
+    cursor: pointer;
+}
+@media (min-widht:1024px) {
+    .nav_bar ul li{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-left: 50%;
+    }
+    
+}
